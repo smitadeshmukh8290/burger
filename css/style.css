@@ -1,0 +1,434 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Bebas Neue", cursive;
+}
+
+header {
+  padding: 1rem 0;
+  background: url("../img/bg.png") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+}
+
+.navbar-toggler {
+  background-color: #3d2514;
+}
+
+.fa-bars {
+  color: #fff;
+  font-size: 2rem;
+}
+
+#mynav a {
+  color: #3d2514;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+#mynav .nav-link {
+  font-family: "Bebas Neue", cursive;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  padding-left: 5rem;
+}
+
+.navbar-brand img {
+  width: 66%;
+}
+
+.head_text h4, .head_text h1 {
+  font-family: "Alfa Slab One", cursive;
+  text-transform: uppercase;
+  color: #3d2514;
+  font-size: 6rem;
+  text-shadow: 0px 4px 2px #fff;
+}
+
+.head_text {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 18rem 0;
+}
+.head_text h6 {
+  font-family: "Bebas Neue", cursive;
+  border: 2px dashed #3d2514;
+  padding: 0.8rem 0.9rem;
+  width: 100%;
+  font-size: 1.6rem;
+  color: #634620;
+}
+.head_text h1 {
+  font-size: 6rem;
+  overflow: hidden;
+  padding-top: 2rem;
+}
+.head_text h4 {
+  overflow: hidden;
+}
+
+.padd {
+  margin: 0 auto;
+  text-align: center;
+}
+.padd img {
+  margin: 10rem 0;
+}
+
+.most_popular .left_pt {
+  margin-top: 3.4rem;
+}
+.most_popular .berger_btn {
+  width: 200px;
+  height: 45px;
+  border: none;
+  background-color: #ffc045;
+  color: #3d2514;
+  display: block;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 45px;
+  margin: auto;
+  padding: 0 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.most_popular .left_img {
+  position: relative;
+}
+.most_popular .left_img img {
+  width: 100%;
+}
+.most_popular .left_img .left_img_text {
+  position: absolute;
+  top: 28px;
+  color: #fff;
+  left: 32px;
+}
+.most_popular .left_img .left_img_text h6 {
+  font-size: 2rem;
+}
+.most_popular .left_img .left_img_text h2 {
+  font-size: 3rem;
+}
+
+.heading {
+  font-family: "Alfa Slab One", cursive;
+  color: #3d2514;
+  text-align: center;
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin: auto;
+}
+
+.choose_enjoy {
+  margin: 8rem 0;
+}
+.choose_enjoy p {
+  color: #634620;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.box {
+  text-align: center;
+  width: 100%;
+  display: block;
+  position: relative;
+}
+.box p {
+  font-family: "Montserrat", sans-serif;
+  font: 1.6rem;
+  position: relative;
+}
+.box p::after {
+  position: absolute;
+  content: "";
+  background-color: #000;
+  width: 63px;
+  height: 100px;
+  transform: scale(2, 0.2);
+  filter: blur(39px);
+  border-radius: 100%;
+  top: -14rem;
+  left: 15rem;
+}
+.box h3 {
+  color: #3d2514;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+.box a {
+  background-color: #bf2222;
+  width: 196px;
+  height: 54px;
+  border: none;
+  color: #fff;
+  display: block;
+  font-size: 2rem;
+  line-height: 54px;
+  margin: auto;
+}
+.box img {
+  margin-bottom: 6rem;
+  margin-top: 3rem;
+  width: 100%;
+  height: 39vh;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: relative;
+}
+
+.my_carousel .for_box_shadow {
+  box-shadow: 7px 9px 7px 0px #e1e1e1;
+}
+.my_carousel h1 {
+  text-align: left;
+  font-size: 3rem;
+}
+.my_carousel h6 {
+  color: #3d3d3d;
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+.my_carousel p {
+  font-family: "Montserrat", sans-serif;
+  color: #828282;
+  font-size: 1.9rem;
+  padding-top: 3rem;
+  line-height: 3rem;
+}
+.my_carousel .owl-theme .owl-dots {
+  text-align: left;
+}
+.my_carousel .owl-theme .owl-dots .owl-dot {
+  position: relative;
+  top: -45px;
+}
+.my_carousel .owl-theme .owl-dots .owl-dot:hover span {
+  background-color: #ffc045;
+}
+.my_carousel .owl-theme .owl-dots .owl-dot.active span {
+  background-color: #ffc045;
+}
+.my_carousel .carousel_para {
+  padding-top: 5rem;
+}
+
+.order_form {
+  padding-top: 4rem;
+  position: relative;
+}
+.order_form h6 {
+  text-align: center;
+  font-size: 2rem;
+  color: #634620;
+  letter-spacing: 1px;
+  font-family: "Bebas Neue", cursive;
+  padding-top: 3rem;
+}
+.order_form h2 {
+  letter-spacing: 2px;
+  padding-bottom: 5rem;
+}
+
+.form_header input, .form_header button {
+  padding: 1rem;
+  font-size: 1.7rem;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 3px;
+}
+.form_header button {
+  background-color: #bf2222;
+  color: #fff;
+  font-weight: bold;
+}
+
+.f1 {
+  width: 70%;
+  position: absolute;
+  top: -19rem;
+}
+
+.f2 {
+  position: absolute;
+  width: 54%;
+  right: -55px;
+  top: -33px;
+}
+
+footer {
+  background: url(../img/footer.png);
+  background-position: center;
+  background-size: cover;
+  margin-top: -12rem;
+}
+footer .footer_logo {
+  width: 47%;
+  padding-top: 7rem;
+  padding-bottom: 4rem;
+}
+footer p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+}
+footer p {
+  color: #fff;
+}
+footer .location {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+}
+footer a {
+  display: block;
+  color: #fff;
+  font-size: 2rem;
+}
+footer a span {
+  margin-right: 2rem;
+}
+
+.P_footer {
+  font-family: "Bebas Neue", cursive;
+}
+
+.social {
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+}
+
+.paddi_bottom {
+  padding-top: 5rem;
+}
+
+footer.container-fluid {
+  width: 95%;
+  text-align: center;
+}
+
+@media (max-width: 594px) {
+  footer {
+    margin-top: 0;
+  }
+  footer p {
+    font-size: 1.2rem;
+  }
+
+  .social {
+    justify-content: center;
+  }
+
+  .my_carousel .carousel_para {
+    padding-top: 0;
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 361px) {
+  html {
+    width: 100%;
+    overflow-x: hidden;
+  }
+}
+@media (max-width: 767px) {
+  .head_text {
+    padding-top: 2rem;
+    text-align: center;
+  }
+  .head_text h6 {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.8rem 0;
+    font-size: 1rem;
+  }
+  .head_text h1 {
+    font-size: 3rem;
+  }
+  .head_text h4 {
+    font-size: 2rem;
+  }
+
+  .most_popular .left_img img {
+    margin-top: 2rem;
+  }
+  .most_popular .left_pt {
+    margin-top: 0;
+  }
+
+  .carousel_para {
+    text-align: center;
+  }
+  .carousel_para h1 {
+    text-align: center;
+  }
+
+  .f1 {
+    position: static;
+    width: 56%;
+  }
+
+  .f2 {
+    width: 46%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .head_text h1 {
+    font-size: 5rem;
+  }
+  .head_text h4 {
+    font-size: 3rem;
+  }
+
+  .header_bg .burger .discount {
+    width: 70px;
+    height: 70px;
+    font-size: 1rem;
+    bottom: -38px;
+  }
+  .header_bg .burger .discount span {
+    font-size: 2rem;
+  }
+
+  .most_popular .left_img .left_img_text h2 {
+    font-size: 2rem;
+  }
+
+  .box p::after {
+    top: -253px;
+    left: 9rem;
+    width: 25px;
+  }
+
+  .my_carousel .carousel_para {
+    padding-top: 0;
+  }
+
+  .my_carousel p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .my_carousel .owl-theme .owl-dots .owl-dot {
+    top: 0;
+  }
+}/*# sourceMappingURL=style.css.map */

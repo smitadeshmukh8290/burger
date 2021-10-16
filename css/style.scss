@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+   
+}
+html{
+   font-size: 10px;
+   font-family: "Bebas Neue", cursive;
+}
+$brown:#3d2514;
+$f_brown:#634620;
+$alfa:'Alfa Slab One', cursive;
+$bebas:'Bebas Neue', cursive;
+$monst:'Montserrat', sans-serif;
+$m_red:#bf2222;
+// N A V
+header{
+    padding: 1rem 0;
+    background: url('../img/bg.png') no-repeat;
+    background-size: cover;
+    width: 100%;
+  height: 100%;
+   background-position: center;
+}
+.navbar-toggler{
+   background-color: #3d2514; 
+}
+.fa-bars{
+    color: #fff;
+    font-size: 2rem;
+}
+#mynav{
+    
+    a{
+        color:$brown;
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+    .nav-link{
+        font-family: $bebas;
+        font-weight: lighter;
+        letter-spacing: 2px;
+        font-size: 1.5rem;
+        padding-left: 5rem;
+    }
+}
+.navbar-brand{
+    img{
+        width: 66%;
+    }
+}
+%big_text{
+    font-family: $alfa;
+    text-transform: uppercase;
+    color: $brown;
+    font-size: 6rem;
+    text-shadow: 0px 4px 2px #fff;
+}
+.head_text{
+    display: flex;
+    flex-flow:column wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 18rem 0;
+   
+    h6{
+        font-family: "Bebas Neue", cursive;
+        border: 2px dashed #3d2514;
+        padding: .8rem .9rem;
+        width: 100%;
+        font-size: 1.6rem;
+        color:$f_brown;
+        }
+    h1{
+        @extend %big_text;
+        font-size: 6rem;
+        overflow:hidden;
+        padding-top: 2rem;
+    }
+    h4{
+        @extend %big_text;
+        overflow:hidden;
+    }
+}
+// HEADER TEXT
+.padd {
+    margin: 0 auto;
+    text-align: center;
+ 
+    img{
+     
+        margin: 10rem 0;
+    }
+}
+// most_popular
+.most_popular{
+    .left_pt{
+        margin-top: 3.4rem;
+    }
+    .berger_btn{
+        width: 200px;
+        height: 45px;
+        border: none;
+        background-color: #ffc045;
+        color: #3d2514;
+        display: block;
+        font-size: 1.5rem;
+        text-align: center;
+        line-height: 45px;
+        margin: auto;
+        padding: 0 1rem;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    .left_img{
+        position: relative;
+        img{
+            width:100%;
+        }
+        .left_img_text{
+            position: absolute;
+            top: 28px;
+            color: #fff;
+          
+            left: 32px;
+            h6{
+                font-size: 2rem;
+            }
+            h2{
+                font-size: 3rem;
+            }
+        }
+    }
+}
+//  choose & enjoy 
+.heading{
+    font-family: $alfa;
+    color: #3d2514;
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin: auto;
+}
+.choose_enjoy{
+    margin: 8rem 0;
+    p{
+        color: #634620;
+        font-family: $monst;
+        font-size: 1.5rem;
+        text-align: center;
+        padding-top: 2rem;
+    }
+}
+.box{
+    text-align: center;
+    width: 100%;
+    display: block;
+    position: relative;
+    p{
+         font-family: $monst;
+         font: 1.6rem;
+         position: relative;
+         &::after{
+            position: absolute;
+            content: "";
+            background-color: #000;
+            width: 63px;
+            height: 100px;
+            transform: scale(2, 0.2);
+            filter: blur(39px);
+            border-radius: 100%;
+            top: -14rem;
+            left: 15rem;
+        }
+    }
+    h3{
+        color:$brown;
+       font-size: 1.7rem;
+       font-weight: bold;
+    }
+    a{
+        background-color: $m_red;
+        width:196px;
+        height: 54px;
+        border: none;
+        color:#fff;
+        display: block;
+        font-size: 2rem;
+        line-height: 54px;
+        margin: auto;
+    }
+    img{
+        margin-bottom: 6rem;
+        margin-top: 3rem;
+        width: 100%;
+        height: 39vh;
+        object-fit: contain;
+        position: relative;
+       
+    }
+}
+// my carousel 
+.my_carousel{
+   
+    .for_box_shadow{box-shadow: 7px 9px 7px 0px #e1e1e1;}
+    h1{
+        text-align: left;
+        font-size: 3rem;
+    }
+    h6{
+        color:#3d3d3d;
+        font-size: 2rem;
+        font-family: $monst;
+        text-transform: uppercase;
+    }
+    p{
+        font-family: "Montserrat", sans-serif;
+        color: #828282;
+        font-size: 1.9rem;
+        padding-top: 3rem;
+        line-height: 3rem;
+    }
+       
+    .owl-theme .owl-dots {
+        .owl-dot{
+            position: relative;
+            top: -45px;
+        }
+            text-align: left;
+            .owl-dot:hover span{
+                background-color: #ffc045;
+            }
+            .owl-dot.active span{
+                background-color: #ffc045;
+            }
+    }
+    .carousel_para{
+        padding-top: 5rem;
+    }
+}
+// oder form
+.order_form{
+    padding-top: 4rem;
+    position: relative;
+    h6{
+        text-align: center;
+        font-size: 2rem;
+        color: $f_brown;
+        letter-spacing: 1px;
+        font-family: $bebas;
+        padding-top: 3rem;
+    }
+    h2{
+        letter-spacing: 2px;
+        padding-bottom: 5rem;
+    }
+}
+.form_header{
+    input, button{
+        padding: 1rem;
+        font-size: 1.7rem;
+        font-family: $monst;
+        border-radius: 3px;
+    }
+    button{
+        background-color: #bf2222;
+        color: #fff;
+        font-weight: bold;
+       
+    }
+}
+     .f1{
+        width: 70%;
+        position: absolute;
+        top: -19rem;
+    }
+    .f2{
+        position: absolute;
+        width: 54%;
+        right: -55px;
+        top: -33px;
+    }
+  
+// footer
+footer{
+    background: url(../img/footer.png);
+    background-position:center;
+    background-size:cover;
+    margin-top: -12rem;
+   
+    .footer_logo{
+        width: 47%;
+        padding-top: 7rem;
+        padding-bottom: 4rem;
+    }
+    p{
+        font-family: $monst;
+        font-size: 1.6rem;
+    }
+  
+
+    p{color:#fff;}
+    .location{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    a{
+        display: block;
+        color:#fff;
+        font-size: 2rem;
+        span{
+            margin-right: 2rem;
+        }
+    }
+}
+.P_footer{
+    font-family: $bebas;
+}
+.social{
+display: flex;
+justify-content: flex-end;
+align-content: center;
+   
+}
+.paddi_bottom{
+    padding-top: 5rem;
+}
+footer.container-fluid{
+    width: 95%;
+    text-align: center;
+}
+
+// media query
+@media (max-width:594px){
+
+   
+    footer{
+        margin-top: 0;
+        p{
+            font-size:1.2rem;
+        }
+    }
+    .social{
+      justify-content: center;
+    }
+    .my_carousel
+    .carousel_para{
+        padding-top: 0;
+    }
+     p{font-size: 1.6rem;}
+}
+@media(max-width:361px){
+    html{
+        width:100%;
+        overflow-x: hidden;
+    }
+}
+@media(max-width:767px){
+    
+    .head_text{
+        padding-top: 2rem;
+        text-align: center;
+        h6{
+            width: 100%;
+            margin-bottom: 1rem;
+            padding: .8rem 0;
+            font-size: 1rem;
+        }
+        h1{
+            font-size: 3rem;
+        }
+        h4{
+            font-size: 2rem;
+        }
+        
+    }
+   
+    .most_popular{
+        .left_img img{
+            margin-top: 2rem;
+    
+        }
+        .left_pt{
+            margin-top: 0;
+        }
+    }
+   .carousel_para{
+       text-align: center;
+       h1{
+           text-align: center;
+       }
+   }  
+   .f1{
+       position: static;
+       width:56%;
+   }
+   .f2{
+    width: 46%;
+   }
+}
+@media(min-width:768px) and (max-width:991px){
+   
+    .head_text{
+      
+        h1{
+            font-size: 5rem;
+        }
+        h4{
+            font-size: 3rem;
+        }
+    }
+    .header_bg .burger .discount{
+        width:70px;
+        height: 70px;
+        font-size: 1rem;
+        bottom: -38px;
+        span{
+            font-size: 2rem;
+        }
+    }
+    .most_popular .left_img .left_img_text h2{
+        font-size: 2rem;
+    }
+    .box p::after{
+        top: -253px;
+        left: 9rem;
+        width: 25px;
+    }
+    .my_carousel .carousel_para{
+        padding-top: 0;
+    }
+    .my_carousel p{
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+  
+.my_carousel .owl-theme .owl-dots .owl-dot{
+    top:0;
+}
+}
+@media(min-width:992px) and (max-width:1199px){
+   
+}
+
+   
+
+
